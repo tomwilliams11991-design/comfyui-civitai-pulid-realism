@@ -18,8 +18,8 @@ RUN cd /comfyui/custom_nodes && \
 
 RUN cd /comfyui/custom_nodes && \
     git clone --depth 1 https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git && \
-    (pip install --no-cache-dir -r /comfyui/custom_nodes/ComfyUI_PuLID_Flux_ll/requirements.txt || \
-     pip install --no-cache-dir facexlib onnxruntime-gpu insightface timm)
+    pip install --no-cache-dir -r /comfyui/custom_nodes/ComfyUI_PuLID_Flux_ll/requirements.txt && \
+    pip install --no-cache-dir facenet-pytorch
 
 RUN cd /comfyui/custom_nodes && \
     git clone --depth 1 https://github.com/kijai/ComfyUI-Florence2.git && \
