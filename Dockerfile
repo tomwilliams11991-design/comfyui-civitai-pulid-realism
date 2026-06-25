@@ -2,7 +2,7 @@
 # unreliable `comfy node install` calls. Fixes "UnetLoaderGGUF not found"
 # runtime error from the wizard-generated original.
 
-FROM runpod/worker-comfyui:5.8.4-base
+FROM runpod/worker-comfyui:5.8.6-base-cuda12.8.1
 
 ARG HF_TOKEN=""
 
